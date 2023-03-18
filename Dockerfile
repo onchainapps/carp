@@ -13,6 +13,7 @@ RUN cp /indexer/target/release/migration .
 
 COPY ./indexer/genesis ./genesis
 COPY ./indexer/execution_plans ./execution_plans
+COPY ./indexer/configs ./configs
 
 ############################################################
 
