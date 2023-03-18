@@ -7,7 +7,7 @@ sink:
   type: cardano
   db:
     type: postgres
-    database_url: postgresql://carp:carpdb@192.168.8.179:5432/carp_mainnet
+    database_url: postgresql://carp:carpdb@192.168.8.179:5432/carp
   network: mainnet # preview / preprod / testnet
 
 start_block:
