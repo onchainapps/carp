@@ -1,13 +1,13 @@
 source:
   type: oura
-  socket: "relays-new.cardano-mainnet.iohk.io:3001"
-  bearer: Tcp # Unix
+  socket: "/app/node-ipc/node.socket" # or url
+  bearer: Unix # or Tcp
 
 sink:
   type: cardano
   db:
     type: postgres
-    database_url: postgresql://carp:1234@localhost:5432/carp_mainnet
+    database_url: postgresql://carp:carpdb@192.168.8.179:5432/carp
   network: mainnet # preview / preprod / testnet
 
 start_block:

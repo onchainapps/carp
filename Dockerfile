@@ -22,4 +22,4 @@ ARG APP=/app
 COPY --from=x-builder /ops ${APP}
 WORKDIR ${APP}
 #USER nonroot
-ENTRYPOINT ["/bin/sh", "-c" , "./migration up && ./carp"]
+ENTRYPOINT ["/bin/sh", "-c" , "./migration up && ./carp --config-path /app/indexer/configs/default.yml "]
