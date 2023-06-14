@@ -29,7 +29,7 @@ include_payload=false
 [ByronInputTask]
 
 [MultieraBlockTask]
-readonly=true
+readonly=false
 include_payload=false
 
 [MultieraTransactionTask]
